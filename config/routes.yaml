@@ -1,0 +1,32 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+register:
+    path: /register
+    controller: App\Controller\UserController::registerUser
+    methods: POST
+
+measurements:
+    path: /api/measurements
+    controller: App\Controller\MedicionesVinoController::getMeasurements
+    methods: GET
+
+tipos_vino:
+    path: /api/tipos_vino
+    controller: App\Controller\MedicionesTipoVinoController::getTiposVino
+    methods: GET
+
+variedades_vino:
+    path: /api/variedades_vino
+    controller: App\Controller\MedicionesVariedadVinoController::getVariedadesVino
+    methods: GET
+
+post_measurements:
+    path: /api/measurements
+    controller: App\Controller\MedicionesVinoController::addMeasurement
+    methods: POST
+
+
+api_login_check:
+    path: /api/login_check
